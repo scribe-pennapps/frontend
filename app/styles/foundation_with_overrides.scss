@@ -1,1 +1,17 @@
+@import "variables";
+@import "foundation/functions";
+
+$tabbar-bg: $jet-black;
+
+$topbar-bg: $jet-black;
+
+$topbar-height: 52px;
+
+$topbar-title-font-size: rem-calc(22);
+
+$topbar-link-font-size: rem-calc(16);
+$topbar-link-bg-hover: scale-color($jet-black, $lightness: -7%);
+$topbar-link-bg-active: $jet-black;
+$topbar-link-bg-active-hover: $topbar-link-bg-hover;
+
 @import "foundation";
