@@ -2,6 +2,8 @@
 $include-html-global-classes: false;
 @import "foundation/components/global";
 @import "foundation/functions";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
 
 .main-jumbotron-image-wrapper {
   background-image: url(http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528c8f581f45e_1.JPG);
@@ -21,5 +23,64 @@ $include-html-global-classes: false;
 
   p {
     font-size: rem-calc(36);
+  }
+}
+
+.step {
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  h1 {
+    color: #fff;
+    font-size: rem-calc(64);
+    margin-bottom: 75px;
+  }
+}
+
+.step-1 {
+  background-color: $ankit-blue;
+
+  .phone {
+    height: 800px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.step-2 {
+  background-color: $green;
+
+  .phone {
+    height: 800px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.step-3 {
+  background-color: $jet-black;
+
+  h1 {
+    margin-bottom: 140px;
+  }
+
+  .url {
+    text-align: center;
+
+    a {
+      background-color: #fff;
+      padding: 15px 20px 15px 20px;
+      text-align: center;
+      color: $jet-black;
+
+      font-size: rem-calc(36);
+      @include border-radius(8px);
+
+      @include transition(0.5s);
+    }
+
+    a:hover {
+      color: scale-color($ankit-blue, $lightness: -20%);
+    }
   }
 }
