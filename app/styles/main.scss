@@ -19,6 +19,7 @@ $include-html-global-classes: false;
   h1 {
     color: #fff;
     font-size: rem-calc(72);
+    font-weight: bold;
   }
 
   p {
@@ -33,6 +34,7 @@ $include-html-global-classes: false;
   h1 {
     color: #fff;
     font-size: rem-calc(64);
+    font-weight: bold;
     margin-bottom: 75px;
   }
 }
