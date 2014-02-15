@@ -25,7 +25,37 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <nav class="top-bar hide-for-small" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1 class="title"><a href="/">Scribe</a></h1>
+            </li>
+          </ul>
+          <section class="top-bar-section">
+            <ul class="right">
+              <ng-include src="'partials/nav.html'">
+            </ul>
+          </section>
+        </nav>
+        <nav class="tab-bar show-for-small">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+          </section>
+          <section class="middle tab-bar-section">
+            <h1 class="title">Scribe</h1>
+          </section>
+        </nav>
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Navigation</label></li>
+            <ng-include src="'partials/nav.html'"></ng-include>
+          </ul>
+        </aside>
+        <div ng-view=""></div>
+      </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -61,6 +91,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
         <!-- endbuild -->
 </body>
 </html>
